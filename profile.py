@@ -20,7 +20,7 @@ request = pc.makeRequestRSpec()
 link = request.LAN("lan")
 
 # Loop through creation of nodes.
-for i in range(1,5):
+for i in range(1,13):
     node = request.XenVM(str("node-") + str(i))
     node.disk_image = "urn:publicid:IDN+emulab.net+image+emulab-ops:CENTOS7-64-STD"
     interface = node.addInterface("iface" + str(i))
